@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/bg_light_green">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web Service Explorer"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/sky_primary"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Web Service URL"
+        app:boxBackgroundColor="@color/surface_light_green"
+        app:boxStrokeColor="@color/sky_primary"
+        app:hintTextColor="@color/sky_primary"
+        android:textColorHint="@color/text_secondary"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:text="https://jsonplaceholder.typicode.com/posts/1"
+            android:inputType="textUri" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFetch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Send HTTP GET Request"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_on_primary"
+        app:backgroundTint="@color/sky_primary"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Response Details"
+        android:textColor="@color/sky_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_surface"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press 'Send HTTP GET Request' to access web service."
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:fontFamily="monospace" />
+    </ScrollView>
+
+</LinearLayout>

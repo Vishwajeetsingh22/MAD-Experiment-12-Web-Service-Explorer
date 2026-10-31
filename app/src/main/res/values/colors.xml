@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background colors (Light Green Theme) -->
+    <color name="bg_light_green">#F0FDF4</color> <!-- Very light green background -->
+    <color name="surface_light_green">#DCFCE7</color> <!-- Slightly darker green for cards/surfaces -->
+    <color name="surface_variant_green">#BBF7D0</color> <!-- Even darker for strokes/borders -->
+
+    <!-- Accent colors (Sky Blue - kept from previous request) -->
+    <color name="sky_primary">#0EA5E9</color>
+    <color name="sky_dark">#0369A1</color>
+    <color name="sky_light">#7DD3FC</color>
+
+    <!-- Text colors for Light Theme -->
+    <color name="text_primary">#14532D</color> <!-- Dark green text for readability on light green -->
+    <color name="text_secondary">#166534</color>
+    <color name="text_on_primary">#FFFFFF</color> <!-- White text on the sky blue button -->
+
+    <!-- Other -->
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

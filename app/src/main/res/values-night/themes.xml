@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.WebServiceExplorer_Exp12" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/sky_primary</item>
+        <item name="colorPrimaryDark">@color/sky_dark</item>
+        <item name="colorAccent">@color/sky_primary</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+
+        <item name="android:windowBackground">@color/bg_light_green</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <item name="android:navigationBarColor">@color/bg_light_green</item>
+        <item name="android:statusBarColor">@color/bg_light_green</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="O_MR1">true</item>
+    </style>
+
+    <style name="Theme.WebServiceExplorer_Exp12" parent="Base.Theme.WebServiceExplorer_Exp12" />
+</resources>
